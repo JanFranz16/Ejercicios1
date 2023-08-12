@@ -1,0 +1,56 @@
+Pregunta 1
+**********
+
+package org.example;
+
+public class Main {
+    public static void main(String[] args) {
+        int nota1 = 12;
+        int nota2 = 16;
+        int nota3 = 18;
+
+        System.out.println((nota1+nota2+nota3)/3);
+    }
+}
+
+Pregunta 2
+**********
+package org.example;
+
+import java.util.SortedMap;
+public class Pregunta2 {
+    public static void main(String[]args){
+
+        double base = 10;
+        double altura = 15;
+
+        System.out.println(base*altura/2);
+    }
+
+}
+
+Pregunta 3
+**********
+
+package org.example;
+
+public class Pregunta3 {
+    public static void main(String[] args) {
+
+        System.out.println(calcularPrecioFinal(1999));
+
+    }
+
+    public static double calcularPrecioFinal(double precioinicial){
+        double preciofinal = 0;
+
+
+        if (precioinicial < 2000) {
+            preciofinal = precioinicial*0.18+precioinicial;
+        }
+        else {
+            preciofinal = precioinicial*0.21+precioinicial;
+        }
+        return preciofinal;
+    }
+}
